@@ -1,34 +1,18 @@
-class Game:
+class Player:
 
-    def __init__(self, player1Name, player2Name):
-        self.playerOneName = playerOneName
-        self.playerTwoName = playerTwoName
-        self.playerOnePoints = 0
-        self.playerTwoPoints = 0
+    def __init__(self, name, points):
+        self._name = name
+        self._points = points
 
-    def setPlayerOneName (self,name):
-        self.playerOneName = name
+    def setPlayerName (self,name):
+        self._name = name
     
-    def setPlayerTwoName (self,name):
-        self.playerTwoName = name
-
-    def setPlayerOnePoints(self,points):
-        self.playerOnePoints += points
-
-    def setPlayerTwoPoints(self,points):
-        self.playerTwoPoints += points
-
-    def getPlayerOneName (self):
-        return self.playerOneName
+    def setPlayerPoints (self,points):
+        self._points = points
     
-    def getPlayerTwoName (self):
-        return self.playerTwoName
+    def getPlayerName (self):
+        return self._name
 
-    def getPlayerOnePoints(self):
-        return self.playerOnePoints
+    def getPlayerPoints (self):
+        return self._points    
 
-    def getPlayerTwoPoints(self):
-        return self.playerTwoPoints
-
-    
-    

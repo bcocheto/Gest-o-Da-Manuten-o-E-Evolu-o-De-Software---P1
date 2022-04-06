@@ -16,6 +16,4 @@ class Player:
     def getPlayerPoints (self):
         return self._points
 
-    def getPlayerSets(self):
-        return round(self._points/15) if round(self._points/15)>0 else 0   
 

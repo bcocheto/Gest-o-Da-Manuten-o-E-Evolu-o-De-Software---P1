@@ -8,7 +8,11 @@ class Game:
         self._playerTwo = Player # input do usuário
         self._score = score
 
-
+    def score(self):
+        self.getAdvantageWinner()
+        self.getPlayerWithTheMostPoints()
+        self.getPlayerWithTheMostSets()
+        
 
     def getScoreName(self):
     
